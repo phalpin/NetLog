@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.21730.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Server", "NetLog\NetLog.Server\NetLog.Server.csproj", "{871BD55F-E340-4A9D-B55C-88AD02D73EB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Core", "NetLog\NetLog.Core\NetLog.Core.csproj", "{EBE45F98-F2D7-476A-8DE4-010409E38B91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Client", "NetLog\NetLog.Client\NetLog.Client.csproj", "{D1AA361A-1FF7-45E5-AD5E-D69BD487A640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Tests", "NetLog\NetLog.Tests\NetLog.Tests.csproj", "{F4922644-B323-41AF-8620-9AE98B3F60C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{871BD55F-E340-4A9D-B55C-88AD02D73EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{871BD55F-E340-4A9D-B55C-88AD02D73EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{871BD55F-E340-4A9D-B55C-88AD02D73EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{871BD55F-E340-4A9D-B55C-88AD02D73EB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBE45F98-F2D7-476A-8DE4-010409E38B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE45F98-F2D7-476A-8DE4-010409E38B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE45F98-F2D7-476A-8DE4-010409E38B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE45F98-F2D7-476A-8DE4-010409E38B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1AA361A-1FF7-45E5-AD5E-D69BD487A640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1AA361A-1FF7-45E5-AD5E-D69BD487A640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1AA361A-1FF7-45E5-AD5E-D69BD487A640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1AA361A-1FF7-45E5-AD5E-D69BD487A640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4922644-B323-41AF-8620-9AE98B3F60C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4922644-B323-41AF-8620-9AE98B3F60C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4922644-B323-41AF-8620-9AE98B3F60C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4922644-B323-41AF-8620-9AE98B3F60C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
