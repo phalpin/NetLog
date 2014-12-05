@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.21730.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Server", "NetLog\NetLog.Server\NetLog.Server.csproj", "{871BD55F-E340-4A9D-B55C-88AD02D73EB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Server", "NetLog.Server\NetLog.Server.csproj", "{871BD55F-E340-4A9D-B55C-88AD02D73EB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Core", "NetLog\NetLog.Core\NetLog.Core.csproj", "{EBE45F98-F2D7-476A-8DE4-010409E38B91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Core", "NetLog.Core\NetLog.Core.csproj", "{EBE45F98-F2D7-476A-8DE4-010409E38B91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Client", "NetLog\NetLog.Client\NetLog.Client.csproj", "{D1AA361A-1FF7-45E5-AD5E-D69BD487A640}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Client", "NetLog.Client\NetLog.Client.csproj", "{D1AA361A-1FF7-45E5-AD5E-D69BD487A640}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Tests", "NetLog\NetLog.Tests\NetLog.Tests.csproj", "{F4922644-B323-41AF-8620-9AE98B3F60C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Tests", "NetLog.Tests\NetLog.Tests.csproj", "{F4922644-B323-41AF-8620-9AE98B3F60C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
