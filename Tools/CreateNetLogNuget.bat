@@ -1,0 +1,1 @@
+%1..\Tools\nuget.exe pack %1NetLog.Client.csproj -outputdirectory %1..\Builds\

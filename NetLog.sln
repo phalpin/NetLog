@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.21730.1
+VisualStudioVersion = 14.0.22310.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Server", "NetLog.Server\NetLog.Server.csproj", "{871BD55F-E340-4A9D-B55C-88AD02D73EB9}"
 EndProject
@@ -10,6 +10,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Client", "NetLog.Client\NetLog.Client.csproj", "{D1AA361A-1FF7-45E5-AD5E-D69BD487A640}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLog.Tests", "NetLog.Tests\NetLog.Tests.csproj", "{F4922644-B323-41AF-8620-9AE98B3F60C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{75DF369E-8A72-4753-A505-8A6EF6646A7D}"
+	ProjectSection(SolutionItems) = preProject
+		Tools\CreateNetLogNuget.bat = Tools\CreateNetLogNuget.bat
+		Tools\nuget.exe = Tools\nuget.exe
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
