@@ -51,9 +51,14 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CoreLogTests.cs" />
+    <Compile Include="EventViewerLoggerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NetLog.Client\NetLog.Client.csproj">
+      <Project>{d1aa361a-1ff7-45e5-ad5e-d69bd487a640}</Project>
+      <Name>NetLog.Client</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NetLog.Core\NetLog.Core.csproj">
       <Project>{ebe45f98-f2d7-476a-8de4-010409e38b91}</Project>
       <Name>NetLog.Core</Name>

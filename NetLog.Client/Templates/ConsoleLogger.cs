@@ -7,6 +7,7 @@ using NetLog.Core;
 
 namespace NetLog.Client.Templates
 {
+
     public static class ConsoleLogger
     {
 

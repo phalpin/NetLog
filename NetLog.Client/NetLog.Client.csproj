@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Templates\ConsoleLogger.cs" />
+    <Compile Include="Templates\EventViewerLogger.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NetLog.Core\NetLog.Core.csproj">
