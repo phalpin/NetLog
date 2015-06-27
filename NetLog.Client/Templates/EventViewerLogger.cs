@@ -87,7 +87,7 @@ namespace NetLog.Client.Templates
         {
             var fullMessage = string.Format("Log Level: {0}\n[{1}][{2}] {3}", details.LogType, details.Class, details.Method, message);
             var logtype = TypeForLogType(details.LogType);
-            if(!EventLog.Exists(Options.LogName))
+            //if(!EventLog.Exists(Options.LogName))
 
             
             if (!EventLog.SourceExists(Options.Source))

@@ -12,7 +12,6 @@ namespace NetLog.Server.Entities
     using System;
     using System.Collections.Generic;
     
-    
     public partial class Class : BaseEntity
     {
         public Class()
@@ -20,8 +19,10 @@ namespace NetLog.Server.Entities
             this.Methods = new HashSet<Method>();
         }
     
-    	public string Name { get; set; }
-    	public string Namespace { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Namespace { get; set; }
+        public Nullable<System.DateTime> DateCreated { get; set; }
     
         public virtual ICollection<Method> Methods { get; set; }
     }

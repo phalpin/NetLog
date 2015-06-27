@@ -12,13 +12,14 @@ namespace NetLog.Server.Entities
     using System;
     using System.Collections.Generic;
     
-    
-    public partial class LogEntry : BaseEntity
+    public partial class Log : BaseEntity
     {
-    	public string Message { get; set; }
-    	public int MethodId { get; set; }
-    	public short Type { get; set; }
-    	public System.DateTime TimeLogged { get; set; }
+        public int Id { get; set; }
+        public int MethodId { get; set; }
+        public Nullable<int> LineNumber { get; set; }
+        public int LogType { get; set; }
+        public string Message { get; set; }
+        public System.DateTime DateCreated { get; set; }
     
         public virtual Method Method { get; set; }
     }

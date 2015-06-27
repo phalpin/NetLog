@@ -5,7 +5,7 @@ using System.Web;
 
 namespace NetLog.Server.Data
 {
-    public class LogEntryData : BaseData<Entities.LogEntry>
+    public class LogEntryData : BaseData<Entities.Log>
     {
     }
 }

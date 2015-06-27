@@ -26,12 +26,12 @@ namespace NetLog.Server.Services
             var existingClass = GetExistingOrNewClass(details);
             var existingMethod = GetExistingOrNewMethod(details, existingClass);
 
-            var newLogEnt = new LogEntry
+            var newLogEnt = new Entities.Log
             {
                 MethodId = existingMethod.Id,
                 Message = message,
-                TimeLogged = details.TimeLogged,
-                Type = (short)details.LogType
+                DateCreated = details.TimeLogged,
+                LogType = (short)details.LogType
             };
             _logEntryData.Save(newLogEnt);
         }

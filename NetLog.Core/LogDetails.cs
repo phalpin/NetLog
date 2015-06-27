@@ -18,7 +18,7 @@ namespace NetLog.Core
         
         public LogDetails()
         {
-            TimeLogged = DateTime.Now;
+            TimeLogged = DateTime.UtcNow;
         }
     }
 }

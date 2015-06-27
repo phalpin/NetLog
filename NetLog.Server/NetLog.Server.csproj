@@ -78,28 +78,28 @@
     <Compile Include="DTOs\Log.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\Class.cs">
-      <DependentUpon>DataModel.tt</DependentUpon>
+      <DependentUpon>Entities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\DataModel.Context.cs">
+    <Compile Include="Entities\Entities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataModel.Context.tt</DependentUpon>
+      <DependentUpon>Entities.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\DataModel.cs">
+    <Compile Include="Entities\Entities.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataModel.tt</DependentUpon>
+      <DependentUpon>Entities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\DataModel.Designer.cs">
+    <Compile Include="Entities\Entities.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataModel.edmx</DependentUpon>
+      <DependentUpon>Entities.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Entities\LogEntry.cs">
-      <DependentUpon>DataModel.tt</DependentUpon>
+    <Compile Include="Entities\Log.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Method.cs">
-      <DependentUpon>DataModel.tt</DependentUpon>
+      <DependentUpon>Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="Features\ILog.cs" />
     <Compile Include="Features\Log.svc.cs">
@@ -113,20 +113,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <EntityDeploy Include="Entities\DataModel.edmx">
+    <EntityDeploy Include="Entities\Entities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DataModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>Entities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Entities\DataModel.edmx.diagram">
-      <DependentUpon>DataModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="Entities\DataModel.Context.tt">
+    <Content Include="Entities\Entities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DataModel.Context.cs</LastGenOutput>
+      <DependentUpon>Entities.edmx</DependentUpon>
+      <LastGenOutput>Entities.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Entities\DataModel.tt">
+    <Content Include="Entities\Entities.edmx.diagram">
+      <DependentUpon>Entities.edmx</DependentUpon>
+    </Content>
+    <Content Include="Entities\Entities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DataModel.cs</LastGenOutput>
+      <DependentUpon>Entities.edmx</DependentUpon>
+      <LastGenOutput>Entities.cs</LastGenOutput>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

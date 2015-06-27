@@ -16,7 +16,7 @@ namespace NetLog.Server.Data
             }
         }
 
-        private IQueryable<Entities.Method> byNameAndClassQuery(DataModelContainer db, int classId, string methodName)
+        private IQueryable<Entities.Method> byNameAndClassQuery(dbNetLogEntities db, int classId, string methodName)
         {
             return (
                 from Q in db.Methods

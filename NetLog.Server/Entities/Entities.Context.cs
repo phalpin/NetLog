@@ -13,12 +13,11 @@ namespace NetLog.Server.Entities
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DataModelContainer : DbContext
+    public partial class dbNetLogEntities : DbContext
     {
-        public DataModelContainer()
-            : base("name=DataModelContainer")
+        public dbNetLogEntities()
+            : base("name=dbNetLogEntities")
         {
-            this.Configuration.LazyLoadingEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -27,7 +26,7 @@ namespace NetLog.Server.Entities
         }
     
         public virtual DbSet<Class> Classes { get; set; }
+        public virtual DbSet<Log> Logs { get; set; }
         public virtual DbSet<Method> Methods { get; set; }
-        public virtual DbSet<LogEntry> LogEntries { get; set; }
     }
 }

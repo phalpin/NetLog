@@ -12,18 +12,19 @@ namespace NetLog.Server.Entities
     using System;
     using System.Collections.Generic;
     
-    
     public partial class Method : BaseEntity
     {
         public Method()
         {
-            this.LogEntries = new HashSet<LogEntry>();
+            this.Logs = new HashSet<Log>();
         }
     
-    	public string Name { get; set; }
-    	public int ClassId { get; set; }
+        public int Id { get; set; }
+        public int ClassId { get; set; }
+        public string Name { get; set; }
+        public System.DateTime DateCreated { get; set; }
     
-        public virtual ICollection<LogEntry> LogEntries { get; set; }
         public virtual Class Class { get; set; }
+        public virtual ICollection<Log> Logs { get; set; }
     }
 }

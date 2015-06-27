@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'G:\dev\NetTools\Logging\Server\NetLog.Server\NetLog.Server\Entities\DataModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Phillip\Documents\NetLog\NetLog.Server\Entities\Entities.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

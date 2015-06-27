@@ -8,9 +8,9 @@ namespace NetLog.Server.Data
 {
     public class BaseData<T> where T : BaseEntity
     {
-        protected DataModelContainer db()
+        protected dbNetLogEntities db()
         {
-            return new DataModelContainer();
+            return new dbNetLogEntities();
         }
 
         public T Get(int id)

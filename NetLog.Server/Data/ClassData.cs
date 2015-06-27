@@ -26,7 +26,7 @@ namespace NetLog.Server.Data
             }
         }
 
-        private IQueryable<Class> byNameQuery(DataModelContainer db, string name)
+        private IQueryable<Class> byNameQuery(dbNetLogEntities db, string name)
         {
             return (
                 from Q in db.Classes
@@ -35,7 +35,7 @@ namespace NetLog.Server.Data
             );
         }
 
-        private IQueryable<Class> byNameAndNamespaceQuery(DataModelContainer db, string name, string nameSpace)
+        private IQueryable<Class> byNameAndNamespaceQuery(dbNetLogEntities db, string name, string nameSpace)
         {
             return byNameQuery(db, name).Where(d => d.Namespace.Equals(nameSpace, StringComparison.InvariantCultureIgnoreCase));
         }
