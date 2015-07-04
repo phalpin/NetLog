@@ -9,7 +9,9 @@ using System.Threading.Tasks;
 
 namespace NetLog.Tests
 {
+    //TODO: Hash out what to do in the event we don't have access to the event viewer (not running as administrator)
     [TestClass]
+    [Ignore]
     public class EventViewerLoggerTests
     {
         private const string TEST_SOURCE = "NetLog Tests";
@@ -37,7 +39,7 @@ namespace NetLog.Tests
         }
 
         [TestMethod]
-        public void Test_Info_Log()
+        public void EVENTVIEWER_Test_Info_Log()
         {
             DateTime startTime = DateTime.Now;
             Log.Info("Testing the {0} log", "info");
@@ -46,7 +48,7 @@ namespace NetLog.Tests
         }
 
         [TestMethod]
-        public void Test_Debug_Log()
+        public void EVENTVIEWER_Test_Debug_Log()
         {
             DateTime startTime = DateTime.Now;
             Log.Debug("Testing the {0} log", "debug");
@@ -55,7 +57,7 @@ namespace NetLog.Tests
         }
 
         [TestMethod]
-        public void Test_Warning_Log()
+        public void EVENTVIEWER_Test_Warning_Log()
         {
             DateTime startTime = DateTime.Now;
             Log.Warn("Testing the {0} log", "warn");
@@ -64,7 +66,7 @@ namespace NetLog.Tests
         }
 
         [TestMethod]
-        public void Test_Error_Log()
+        public void EVENTVIEWER_Test_Error_Log()
         {
             DateTime startTime = DateTime.Now;
             Log.Error("Testing the {0} log", "error");
@@ -73,7 +75,7 @@ namespace NetLog.Tests
         }
 
         [TestMethod]
-        public void Test_Message_Log()
+        public void EVENTVIEWER_Test_Message_Log()
         {
             DateTime startTime = DateTime.Now;
             Log.Message("Testing the {0} log", "message");
@@ -82,7 +84,7 @@ namespace NetLog.Tests
         }
 
         [TestMethod]
-        public void Test_Clearing_Logs()
+        public void EVENTVIEWER_Test_Clearing_Logs()
         {
             var loggedEventsBefore = NetLog.Client.Templates.EventViewerLogger.LoggedEvents;
             NetLog.Client.Templates.EventViewerLogger.ClearLoggedEvents();

@@ -42,6 +42,8 @@ namespace NetLog.Core
             }
         }
 
+
+
         /// <summary>
         /// Log an error.
         /// </summary>
@@ -49,8 +51,21 @@ namespace NetLog.Core
         /// <param name="args">Additional parameters to include.</param>
         public static void Error(string format, params object[] args)
         {
-            LogMessage(LogType.Error, format, args);
+            Error(1, format, args);
         }
+
+        /// <summary>
+        /// Log an error.
+        /// </summary>
+        /// <param name="offset">Additional offset to look for class/method.</param>
+        /// <param name="format">Format of the message.</param>
+        /// <param name="args">Additional parameters to include.</param>
+        public static void Error(int offset, string format, params object[] args)
+        {
+            LogMessage(offset, LogType.Error, format, args);
+        }
+
+
 
         /// <summary>
         /// Log a Warning.
@@ -59,8 +74,21 @@ namespace NetLog.Core
         /// <param name="args">Additional parameters to include.</param>
         public static void Warn(string format, params object[] args)
         {
-            LogMessage(LogType.Warn, format, args);
+            Warn(1, format, args);
         }
+
+        /// <summary>
+        /// Log a Warning.
+        /// </summary>
+        /// <param name="offset">Additional offset to get class/method</param>
+        /// <param name="format">Format of the message.</param>
+        /// <param name="args">Additional parameters to include.</param>
+        public static void Warn(int offset, string format, params object[] args)
+        {
+            LogMessage(offset, LogType.Warn, format, args);
+        }
+
+
 
         /// <summary>
         /// Log Information
@@ -69,8 +97,21 @@ namespace NetLog.Core
         /// <param name="args">Additional parameters to include.</param>
         public static void Info(string format, params object[] args)
         {
-            LogMessage(LogType.Info, format, args);
+            Info(1, format, args);
         }
+
+        /// <summary>
+        /// Log Information
+        /// </summary>
+        /// <param name="offset">Additional offset to look for class/method</param>
+        /// <param name="format">Format of the message.</param>
+        /// <param name="args">Additional parameters to include.</param>
+        public static void Info(int offset, string format, params object[] args)
+        {
+            LogMessage(offset, LogType.Info, format, args);
+        }
+
+
 
         /// <summary>
         /// Log a Debug value.
@@ -79,8 +120,21 @@ namespace NetLog.Core
         /// <param name="args">Additional parameters to include.</param>
         public static void Debug(string format, params object[] args)
         {
-            LogMessage(LogType.Debug, format, args);
+            Debug(1, format, args);
         }
+
+        /// <summary>
+        /// Log a Debug value.
+        /// </summary>
+        /// <param name="offset">Additional offset to look for class/method</param>
+        /// <param name="format">Format of the message.</param>
+        /// <param name="args">Additional parameters to include.</param>
+        public static void Debug(int offset, string format, params object[] args)
+        {
+            LogMessage(offset, LogType.Debug, format, args);
+        }
+
+
 
         /// <summary>
         /// Log a Message.
@@ -89,14 +143,25 @@ namespace NetLog.Core
         /// <param name="args">Additional parameters to include.</param>
         public static void Message(string format, params object[] args)
         {
-            LogMessage(LogType.Message, format, args);
+            Message(1, format, args);
+        }
+
+        /// <summary>
+        /// Log a Message.
+        /// </summary>
+        /// <param name="offset">Additional offset for finding class/method</param>
+        /// <param name="format">Format of the message.</param>
+        /// <param name="args">Additional parameters to include.</param>
+        public static void Message(int offset, string format, params object[] args)
+        {
+            LogMessage(offset, LogType.Message, format, args);
         }
 
 
 
-        private static void LogMessage(LogType type, string format, params object[] args)
+        private static void LogMessage(int offset, LogType type, string format, params object[] args)
         {
-            LogDetails details = GetLogDetails(2, type);
+            LogDetails details = GetLogDetails(2 + offset, type);
             string message = string.Format(format, args);
             LogMethodGroup group = GetMethodGroup(type);
             group.ExecuteMethod(type, message, details);
