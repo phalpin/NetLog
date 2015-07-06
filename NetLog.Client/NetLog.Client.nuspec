@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NetLog.Client</id>
+    <version>1.0.0.4</version>
+    <authors>Phillip Halpin</authors>
+    <owners>Phillip Halpin</owners>
+    <projectUrl>https://github.com/phalpin/NetLog</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A logging utility for .NET!</description>
+    <releaseNotes>
+      Added some baseline for EventViewerLogger. This is remaining internal until fully tested.
+      Added ability to add passthrough values for your logging.
+      
+      E.G.
+      Instead of Log.Info("Log {0}", "example"), you can call Log.Info(1, "Log {0}", "example"). This will indicate the class and method from 1 item deeper in the stack.
+    </releaseNotes>
+    <copyright>Copyright 2015</copyright>
+  </metadata>
+</package>

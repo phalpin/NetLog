@@ -12,7 +12,7 @@ namespace NetLog.Client.Templates
     /// Logs out to the Windows Event Viewer
     /// </summary>
     /// <remarks>MAKE SURE YOU'RE RUNNING IN AN ACCOUNT WITH SUFFICIENT PERMISSIONS</remarks>
-    public class EventViewerLogger
+    internal class EventViewerLogger
     {
 
         public static class Options
